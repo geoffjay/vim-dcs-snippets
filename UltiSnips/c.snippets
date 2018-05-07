@@ -1,35 +1,37 @@
 ## libdcs
-# dcs-hdr
-snippet dcs-hdr
-	/*
-	 * Copyright © the libdcs contributors. All rights reserved.
-	 *
-	 * This file is part of libdcs, distributed under the GNU LGPL v3.
-	 * For full terms see the included LICENSE file.
-	 */
+# dcs-chdr
+snippet dcs-hdr "OpenDCS - libdcs C header file"
+/*
+ * Copyright © the libdcs contributors. All rights reserved.
+ *
+ * This file is part of libdcs, distributed under the GNU LGPL v3.
+ * For full terms see the included LICENSE file.
+ */
 
-	#ifndef __DCS_${0}_H__
-	#define __DCS_${0}_H__
+#ifndef __DCS_${0}_H__
+#define __DCS_${0}_H__
 
-	#include "common.h"
+#include "common.h"
 
-	DCS_BEGIN_DECLS
+DCS_BEGIN_DECLS
 
-	/** TODO: document ... */
-	typedef struct ${1} {
-	} ${1};
+/** TODO: document ... */
+typedef struct ${1} {
+} ${1};
 
-	DCS_END_DECLS
+DCS_END_DECLS
 
-	#endif /* __DCS_${0}_H__ */
+#endif /* __DCS_${0}_H__ */
+endsnippet
 
 # dcs-csrc
-snippet dcs-csrc
-	/*
-	 * Copyright © the libdcs contributors. All rights reserved.
-	 *
-	 * This file is part of libdcs, distributed under the GNU LGPL v3.
-	 * For full terms see the included LICENSE file.
-	 */
+snippet dcs-csrc "OpenDCS - libdcs C source file"
+/*
+ * Copyright © the libdcs contributors. All rights reserved.
+ *
+ * This file is part of libdcs, distributed under the GNU LGPL v3.
+ * For full terms see the included LICENSE file.
+ */
 
-	#include "${0}.h"
+#include "${0}.h"
+endsnippet
